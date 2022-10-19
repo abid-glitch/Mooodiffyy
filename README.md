@@ -1,7 +1,6 @@
 # Moodify
-A music webapp that sees you, understands you.    
+A web-based application to detect mood and generate a Spotify list  
 
-By Estelle and Junior      
 
 **Video Demo**:https://youtu.be/iXTTnEAbFfY      
 **Link to Project**: <a href="https://music-moodify.herokuapp.com/">here</a> 
