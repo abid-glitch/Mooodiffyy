@@ -1,7 +1,7 @@
 # Mooodiffyy
 
-Video Demo:https://youtu.be/iXTTnEAbFfY
-Link to Project: https://music-moodify.herokuapp.com/
+Video Demo : https://youtu.be/iXTTnEAbFfY
+Link to Project : https://music-moodify.herokuapp.com/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
