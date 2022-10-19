@@ -1,16 +1,18 @@
 # Mooodiffyy
 
-Video Demo : https://youtu.be/iXTTnEAbFfY
+Video Demo : https://youtu.be/iXTTnEAbFfY  |||| 
 Link to Project : https://music-moodify.herokuapp.com/
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 DESCRIPTION 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 For our final project, we were having issues coming up with an idea. Despite the myriad of topics we covered in class, we could not come up with an idea that was both a cool use of interactive machine learning and feasible. We knew from the get go that we were excited about the idea of making some form of recommender system, but building one from scratch is one of the most difficult machine learning tasks and we did not have the know-how or time to make one. Throughout the semester, we became very comfortable with leveraging existing machine learning solutions both in the browser using JavaScript and the backend using Python's Flask. As such, we decided to combine our skillset, our love for Spotify, and our desire to make a recommender system to make Moodify, a web application that leverages tensorflow.js for computer vision capabilities in the browser to detect a user's mood and Spotify's API to create a playlist of song recommendations for the user based on their Spotify usage patterns and the mood detected in the browser.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Process and Implementation
+PROCESS and IMPLEMENTATION
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Frontend
 In the frontend, our web application relies on face-api.js, JavaScript API for face detection and face recognition in the browser built on top of tensorflow.js, and p5.js, a Processing Library for the browser. Face-api has a trained model for face detection (found in static/models/) which we use to classify a person's facial expression every frame in p5's draw loop. Once a person clicks on the Submit to Spotify button, we defined the following heuristics to match a person's facial expression to a value we can use for the Spotify API:
 
@@ -29,7 +31,8 @@ This heuristic could be modified and further improved, but this ones gave us som
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Backend
+BACKEND 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 We used Flask as our backend server and the Spotipy library to create the playlist. We first take the user's Spotify username and follow the Spotify user authorization flow to obtain authorization to the SPotify API. The following are the steps to obtain authorization (in main.py):
 
 Get username
@@ -43,12 +46,14 @@ We then get the link for the newly created playlist and redirect the user to the
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Reflection and Evaluation
+REFLECTION and EVALUATION
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 We really liked working on this project because it brings together different third party systems into one place, which provided a great learning experience for us as students. Furthermore, from all of the class projects we have worked on, we believe this is an actual application we would use to explore new songs on Spotify. One limitation is that the application is currently only for people with Spotify accounts. In the future, we hope to add an option for people without Spotify user accounts to enable them to be able to use the application as well.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Resources
+RESOURCES
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To get face mood recognition in the browser
 MainDocs: https://justadudewhohacks.github.io/face-api.js/docs/index.html
 Face-API.js: https://github.com/justadudewhohacks/face-api.js/
@@ -59,4 +64,5 @@ https://medium.com/better-programming/add-facial-recognition-to-your-app-easily-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Playlist Creation
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 https://medium.com/@mohithsubbarao/moodtape-using-spotify-api-to-create-mood-generated-playlists-6e1244c70892
